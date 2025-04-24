@@ -63,7 +63,7 @@ const App: React.FC = () => {
           onChange={e => setStep(+e.target.value)}
         />
 
-        <label htmlFor="step">Animation Duration:</label>
+        <label htmlFor="animationDuration">Animation Duration:</label>
         <input
           id="animationDuration"
           type="number"
@@ -75,13 +75,10 @@ const App: React.FC = () => {
           onChange={e => setAnimationDuration(+e.target.value)}
         />
 
-        <label htmlFor="step">Infinite:</label>
+        <label htmlFor="infinite">Infinite:</label>
         <input
           id="infinite"
           type="checkbox"
-          min="50"
-          max="300"
-          step="10"
           name="infinite"
           checked={infinite}
           onChange={e => setInfinite(e.target.checked)}
